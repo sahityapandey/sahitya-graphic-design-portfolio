@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Sahitya Pandey — Graphic Designer creating brand identities, social media creatives, product catalogues and visual stories.">
+  <title>Sahitya Pandey — Graphic Designer & Visual Storyteller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#101828;--muted:#667085;--line:#e5e9f2;--blue:#315efb;--blue2:#dce6ff;--bg:#f7f8fc;--white:#fff;--mint:#c7f7e4;--peach:#ffdfcf;--lav:#e9e2ff;--shadow:0 18px 50px rgba(25,38,78,.08)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:86px}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} button{font:inherit}
+    .wrap{width:min(1140px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(247,248,252,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(229,233,242,.85)}
+    .nav{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.04em}
+    .monogram{display:grid;place-items:center;width:38px;height:38px;border-radius:13px;background:var(--blue);color:white;font-family:Manrope;font-weight:800;letter-spacing:-.05em}
+    .links{display:flex;align-items:center;gap:26px;color:#475467;font-size:14px}
+    .links a:hover{color:var(--blue)} .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:12px 18px;font-weight:700;font-size:14px;transition:.2s}
+    .nav-cta,.btn-primary{background:var(--blue);color:white;box-shadow:0 8px 20px rgba(49,94,251,.2)}
+    .nav-cta:hover,.btn-primary:hover{transform:translateY(-2px);background:#244ce0}
+    .btn-outline{border:1px solid #d6dce8;background:white;color:var(--ink)}.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+    .hero{padding:84px 0 70px;overflow:hidden;position:relative}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid #dce3f1;background:white;border-radius:999px;color:#475467;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .dot{width:8px;height:8px;border-radius:50%;background:#20b780;box-shadow:0 0 0 4px #d9f9eb}
+    h1,h2,h3,p{margin-top:0} h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-.055em}
+    h1{font-size:clamp(42px,6vw,76px);line-height:1.05;margin:23px 0 22px;font-weight:800}
+    .gradient{color:var(--blue)} .hero p{font-size:18px;color:var(--muted);max-width:570px;line-height:1.75}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .micro-proof{display:flex;align-items:center;gap:13px;margin-top:34px;color:#667085;font-size:13px}
+    .avatar-stack{display:flex;padding-left:3px}.avatar-stack span{display:grid;place-items:center;width:30px;height:30px;margin-left:-4px;border:2px solid var(--bg);border-radius:50%;background:#dce6ff;color:#315efb;font-weight:800;font-size:10px}
+    .artboard{position:relative;min-height:450px;display:grid;place-items:center}
+    .orbit{position:absolute;width:380px;height:380px;border:1px dashed #cfd8ed;border-radius:50%}
+    .orbit:before,.orbit:after{content:"";position:absolute;border-radius:50%;background:#315efb}.orbit:before{width:11px;height:11px;top:40px;right:35px}.orbit:after{width:8px;height:8px;bottom:44px;left:30px;background:#f59e0b}
+    .poster{position:relative;width:min(330px,85%);height:390px;padding:25px;border-radius:28px;background:#121b35;color:white;box-shadow:0 30px 80px rgba(21,34,70,.22);transform:rotate(-4deg);overflow:hidden}
+    .poster:before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:#315efb;right:-100px;top:50px;filter:blur(1px)}
+    .poster:after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;border:35px solid #9db7ff;right:-28px;top:100px;opacity:.8}
+    .poster-top{position:relative;z-index:2;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#c8d3f3}
+    .poster h3{position:relative;z-index:2;font-size:46px;line-height:.97;margin-top:56px;max-width:245px;color:white}
+    .poster h3 span{color:#9db7ff}.poster-foot{position:absolute;z-index:2;bottom:24px;left:25px;right:25px;display:flex;justify-content:space-between;border-top:1px solid #465071;padding-top:13px;font-size:10px;color:#c8d3f3}
+    .float-card{position:absolute;background:white;border:1px solid #e7ebf4;border-radius:18px;box-shadow:var(--shadow);padding:15px 17px}
+    .float-card strong{display:block;font-family:Manrope;font-size:14px}.float-card small{color:var(--muted);font-size:11px}
+    .float-a{top:50px;right:0}.float-b{bottom:45px;left:-3px}.swatches{display:flex;gap:5px;margin-top:9px}.swatches i{display:block;width:19px;height:19px;border-radius:6px;background:#315efb}.swatches i:nth-child(2){background:#9db7ff}.swatches i:nth-child(3){background:#c7f7e4}.swatches i:nth-child(4){background:#ffdfcf}
+    section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}.kicker{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--blue);text-transform:uppercase;margin-bottom:12px}
+    h2{font-size:clamp(30px,4vw,48px);line-height:1.1;margin-bottom:12px}.section-head p,.section-intro{color:var(--muted);max-width:550px;margin-bottom:0}
+    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .project{background:white;border:1px solid var(--line);border-radius:24px;overflow:hidden;transition:.25s;box-shadow:0 4px 20px rgba(25,38,78,.025)}
+    .project:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .project-art{height:280px;padding:22px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .art-ubitech{background:#e6edff}.art-usec{background:#e7f7f0}.art-catalogue{background:#fff0e8}.art-blog{background:#eee9ff}
+    .mock{position:relative;z-index:1;box-shadow:0 14px 30px rgba(16,24,40,.16);border-radius:9px}
+    .mock-poster{width:205px;height:225px;background:#123a7a;color:white;padding:20px;transform:rotate(-4deg);display:flex;flex-direction:column;justify-content:space-between}
+    .mock-poster small{font-size:8px;letter-spacing:.12em}.mock-poster b{font-family:Manrope;font-size:29px;line-height:1.02;letter-spacing:-.06em}.mock-poster span{font-size:9px;color:#cddcff}
+    .mock-catalog{width:330px;height:210px;background:#fff;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:13px;transform:rotate(3deg)}
+    .catalog-copy{background:#123a7a;color:white;padding:13px;display:flex;flex-direction:column;justify-content:space-between}.catalog-copy b{font:800 19px Manrope;line-height:1.1}.catalog-copy small{font-size:8px}
+    .product-shapes{background:#f0f3f8;display:grid;place-items:center;position:relative;overflow:hidden}
+    .product-shapes:before{content:"";width:78px;height:78px;border-radius:50%;background:#b4c4d7;box-shadow:0 9px 18px #ccd4df}
+    .product-shapes:after{content:"";position:absolute;width:32px;height:93px;background:linear-gradient(90deg,#8999ad,#e4ebf3,#9baabd);border-radius:7px;transform:rotate(30deg)}
+    .mock-blog{width:310px;height:200px;background:#111b31;color:white;padding:22px;transform:rotate(-3deg);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+    .mock-blog:after{content:"";position:absolute;width:170px;height:170px;border:22px solid #79b4a1;border-radius:50%;right:-35px;top:25px;opacity:.85}
+    .mock-blog small,.mock-blog b,.mock-blog span{position:relative;z-index:1}.mock-blog small{font-size:8px;letter-spacing:.12em;color:#b7d9d0}.mock-blog b{font:800 24px Manrope;line-height:1.05;max-width:220px}.mock-blog span{font-size:8px;color:#cbd5e1}
+    .social-stack{position:relative;width:230px;height:215px}.social-stack div{position:absolute;width:150px;height:180px;border-radius:12px;box-shadow:0 14px 28px #a6b4d4}.social-stack div:nth-child(1){background:#315efb;left:8px;top:15px;transform:rotate(-10deg)}.social-stack div:nth-child(2){background:#ffdfcf;right:8px;top:5px;transform:rotate(8deg);padding:17px;color:#17213a}.social-stack div:nth-child(3){background:#fff;left:42px;top:27px;transform:rotate(-1deg);padding:15px;color:#17213a;border:1px solid #e4e7ec}.social-stack b{display:block;font:800 19px Manrope;line-height:1.02;letter-spacing:-.06em}.social-stack small{font-size:8px}
+    .project-info{padding:23px 24px 25px}.project-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px}.pill{background:#eef2ff;color:#315efb;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:800}.project h3{font-size:23px;margin-bottom:7px}.project p{color:var(--muted);font-size:14px;margin-bottom:17px}.text-link{font-weight:800;color:var(--blue);font-size:13px}.text-link span{margin-left:5px}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:30px}.service{background:white;border:1px solid var(--line);padding:23px;border-radius:20px}.service-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:#edf1ff;color:var(--blue);font-size:20px;margin-bottom:19px}.service h3{font-size:17px;margin-bottom:8px;letter-spacing:-.03em}.service p{color:var(--muted);font-size:13px;margin-bottom:0}
+    .about-panel{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center;background:#111b31;color:white;border-radius:30px;padding:48px;overflow:hidden;position:relative}
+    .about-panel:after{content:"";position:absolute;width:300px;height:300px;border:55px solid rgba(94,131,255,.15);border-radius:50%;right:-80px;bottom:-150px}
+    .about-mark{height:240px;display:grid;place-items:center;position:relative}.about-mark span{display:grid;place-items:center;width:170px;height:170px;border-radius:42px;background:linear-gradient(135deg,#315efb,#9db7ff);font:800 64px Manrope;letter-spacing:-.09em;transform:rotate(-7deg);box-shadow:0 24px 60px #080f20}
+    .about-panel h2{color:white}.about-panel p{color:#c3cde0}.about-panel .kicker{color:#9db7ff}.about-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.about-tags span{border:1px solid #38435c;color:#d8e0f1;padding:7px 11px;border-radius:999px;font-size:12px}
+    .skills{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:28px}.skill{background:white;border:1px solid var(--line);padding:15px 17px;border-radius:15px;display:flex;justify-content:space-between;gap:14px}.skill span{font-weight:700;font-size:14px}.skill small{color:var(--muted);font-size:12px}
+    .contact-panel{background:#dce6ff;border-radius:30px;padding:48px;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact-panel h2{max-width:570px}.contact-panel p{color:#4d5b7b;margin-bottom:0}.contact-actions{display:flex;flex-direction:column;gap:11px;min-width:200px}
+    footer{padding:28px 0 35px;color:var(--muted);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-links{display:flex;gap:18px}
+    .note{font-size:12px;color:#667085;margin-top:18px}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:20px}.artboard{min-height:420px}.hero{padding-top:58px}.services-grid{grid-template-columns:repeat(2,1fr)}.about-panel{grid-template-columns:1fr;padding:32px}.about-mark{height:160px}.about-mark span{width:130px;height:130px;font-size:48px}.contact-panel{padding:34px;align-items:flex-start;flex-direction:column}.contact-actions{flex-direction:row;flex-wrap:wrap}.section-head{align-items:flex-start;flex-direction:column}}
+    @media(max-width:600px){.wrap{width:min(100% - 28px,1140px)}.links{display:none}.nav{min-height:66px}.hero{padding:45px 0 40px}h1{font-size:44px}.hero p{font-size:16px}.artboard{min-height:370px}.orbit{width:300px;height:300px}.poster{height:330px;width:265px;padding:20px}.poster h3{font-size:38px;margin-top:44px}.float-a{right:-2px;top:22px}.float-b{left:-2px;bottom:25px}.work-grid{grid-template-columns:1fr}.project-art{height:245px}.services-grid{grid-template-columns:1fr 1fr;gap:10px}.service{padding:16px}.service h3{font-size:15px}.service p{font-size:12px}.skills{grid-template-columns:1fr}.about-panel{padding:26px}.contact-panel{padding:26px}.contact-actions{flex-direction:column;width:100%}.contact-actions .btn{width:100%}.footer-row{align-items:flex-start;flex-direction:column}.section{padding:58px 0}section{padding:58px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Sahitya Pandey home"><span class="monogram">SP.</span><span>Sahitya Pandey</span></a>
+    <nav class="links" aria-label="Main navigation"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#skills">Skills</a></nav>
+    <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Available for design opportunities</div>
+        <h1>Helping brands<br><span class="gradient">stand out,</span><br>connect & grow.</h1>
+        <p>I'm Sahitya Pandey, a graphic designer creating thoughtful visuals for brands — from social media creatives and promotional campaigns to product catalogues and blog graphics.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore my work <span>↗</span></a><a class="btn btn-outline" href="https://www.canva.com/d/6bZMcRe7YuJUoU6" target="_blank" rel="noreferrer">View portfolio PDF <span>↗</span></a></div>
+        <div class="micro-proof"><div class="avatar-stack"><span>SP</span><span>GD</span><span>✦</span></div><span>Visual design · Branding · Digital creatives</span></div>
+      </div>
+      <div class="artboard" aria-label="Decorative graphic design preview">
+        <div class="orbit"></div>
+        <div class="poster"><div class="poster-top"><span>Studio / SP</span><span>Visuals 01</span></div><h3>Make it<br><span>clear.</span><br>Make it<br>matter.</h3><div class="poster-foot"><span>DESIGN WITH INTENT</span><span>2026 ↗</span></div></div>
+        <div class="float-card float-a"><strong>Brand-first thinking</strong><small>Clarity in every creative</small></div>
+        <div class="float-card float-b"><strong>Visual direction</strong><small>Color · Type · Layout</small><div class="swatches"><i></i><i></i><i></i><i></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head"><div><div class="kicker">Selected work</div><h2>Ideas made visual.</h2></div><p>A selection of creative directions across industrial brands, social content, product catalogues and blog visuals. Replace the concept previews below with your original approved artwork before final publishing.</p></div>
+      <div class="work-grid">
+        <article class="project">
+          <div class="project-art art-ubitech"><div class="mock mock-poster"><small>UBITECH · BRAND COMMUNICATION</small><b>Powering<br>what's<br><span style="color:#9db7ff">next.</span></b><span>Social creative / campaign direction</span></div></div>
+          <div class="project-info"><div class="project-meta"><span class="pill">Social Media</span><span style="color:#98a2b3;font-size:12px">01 / 04</span></div><h3>Ubitech — Brand Creatives</h3><p>LinkedIn posts, promotional creatives and campaign visuals designed to communicate products and brand messages clearly.</p><a class="text-link" href="https://www.linkedin.com/company/ubitech-pvt-ltd/posts" target="_blank" rel="noreferrer">Discuss a similar project <span>↗</span></a></div>
+        </article>
+        <article class="project">
+          <div class="project-art art-usec"><div class="mock mock-blog"><small>UNIQUE SEAL · ENGINEERING</small><b>Precision<br>in every<br>rotation.</b><span>Industrial blog visual / editorial design</span></div></div>
+          <div class="project-info"><div class="project-meta"><span class="pill">Blog Graphics</span><span style="color:#98a2b3;font-size:12px">02 / 04</span></div><h3>Unique Seal — Blog Visuals</h3><p>Technical blog graphics and visual communication for mechanical seal products and industrial audiences.</p><a class="text-link" href="https://uniqueseals.com/blog/prevent-mechanical-seal-failure" target="_blank" rel="noreferrer">View published blog <span>↗</span></a></div>
+        </article>
+        <article class="project">
+          <div class="project-art art-catalogue"><div class="mock mock-catalog"><div class="catalog-copy"><small>PRODUCT CATALOGUE</small><b>Built for<br>industry.<br>Designed for<br>clarity.</b><small>PRODUCT RANGE / 2026</small></div><div class="product-shapes"></div></div></div>
+          <div class="project-info"><div class="project-meta"><span class="pill">Catalogue Design</span><span style="color:#98a2b3;font-size:12px">03 / 04</span></div><h3>Product Catalogues</h3><p>Structured catalogue layouts that balance product presentation, technical information, readability and brand consistency.</p><a class="text-link" href="https://www.canva.com/d/6bZMcRe7YuJUoU6" target="_blank" rel="noreferrer">View portfolio <span>↗</span></a></div>
+        </article>
+        <article class="project">
+          <div class="project-art art-blog"><div class="social-stack"><div></div><div><small>CREATIVE SERIES</small><b>Ideas<br>into<br>impact.</b></div><div><small>BRAND STORY / SOCIAL</small><b>Make<br>every<br>scroll count.</b></div></div></div>
+          <div class="project-info"><div class="project-meta"><span class="pill">Campaign Design</span><span style="color:#98a2b3;font-size:12px">04 / 04</span></div><h3>Social Posts & Promotions</h3><p>Scroll-stopping promotional posters, campaign concepts and digital assets for clear, consistent communication.</p><a class="text-link" href="https://www.linkedin.com/in/sahitya-pandey-77b892268/" target="_blank" rel="noreferrer">Connect on LinkedIn <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="note">Portfolio note: The artwork panels on this starter website are illustrative concept previews, not original client deliverables. Swap them with your real project images before sharing the site with recruiters or clients.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="kicker">What I do</div><h2>Design that works<br>as hard as your brand.</h2>
+      <p class="section-intro">Creative support for brands that want to communicate with clarity and consistency across digital touchpoints.</p>
+      <div class="services-grid">
+        <div class="service"><div class="service-icon">▧</div><h3>Social Media Creatives</h3><p>LinkedIn posts, campaign assets and content series with consistent visual language.</p></div>
+        <div class="service"><div class="service-icon">▤</div><h3>Catalogues & Brochures</h3><p>Organized product layouts that make complex ranges easy to explore.</p></div>
+        <div class="service"><div class="service-icon">✳</div><h3>Posters & Banners</h3><p>Promotional, hiring and event creatives designed to capture attention.</p></div>
+        <div class="service"><div class="service-icon">◉</div><h3>Blog & Brand Graphics</h3><p>Featured images and visual assets that support useful, engaging content.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-panel">
+        <div class="about-mark"><span>SP.</span></div>
+        <div><div class="kicker">A little about me</div><h2>Creative thinking.<br>Clear communication.</h2><p>I'm Sahitya Pandey, a graphic designer with a Computer Science background and hands-on experience creating digital creatives, promotional posters, product catalogues and blog graphics. I enjoy turning briefs into clean, purposeful visuals while keeping the audience, message and brand in focus.</p><p>I value thoughtful layout, typography, visual hierarchy and collaborative feedback — because good design should look polished and communicate something meaningful.</p><div class="about-tags"><span>Visual storytelling</span><span>Brand consistency</span><span>Detail-oriented</span><span>Collaborative</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="kicker">Tools & strengths</div><h2>My creative toolkit.</h2>
+      <p class="section-intro">A blend of design fundamentals, digital content workflows and technical problem-solving.</p>
+      <div class="skills">
+        <div class="skill"><span>Canva & Layout Design</span><small>Design tool</small></div>
+        <div class="skill"><span>Typography & Composition</span><small>Design fundamentals</small></div>
+        <div class="skill"><span>Branding & Visual Consistency</span><small>Brand communication</small></div>
+        <div class="skill"><span>Social Media Content</span><small>Digital creatives</small></div>
+        <div class="skill"><span>Product Catalogue Design</span><small>Print & digital</small></div>
+        <div class="skill"><span>Blog & Promotional Graphics</span><small>Content design</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-panel">
+        <div><div class="kicker">Have a project in mind?</div><h2>Let's make something meaningful.</h2><p>For design opportunities, freelance projects or collaborations, feel free to reach out.</p></div>
+        <div class="contact-actions"><a class="btn btn-primary" href="mailto:sahityapandey96@zohomail.in?subject=Graphic%20Design%20Enquiry">Email me ↗</a><a class="btn btn-outline" href="https://www.linkedin.com/in/sahitya-pandey-77b892268/" target="_blank" rel="noreferrer">LinkedIn profile ↗</a><a class="btn btn-outline" href="https://www.canva.com/d/6bZMcRe7YuJUoU6" target="_blank" rel="noreferrer">Full portfolio ↗</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Sahitya Pandey. Designed with intention.</span><div class="footer-links"><a href="mailto:sahityapandey96@zohomail.in">Email</a><a href="https://www.linkedin.com/in/sahitya-pandey-77b892268/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/sahityapandey" target="_blank" rel="noreferrer">GitHub</a></div></div></footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
